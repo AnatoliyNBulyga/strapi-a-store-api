@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "billboards",
+  "info": {
+    "singularName": "billboard",
+    "pluralName": "billboards",
+    "displayName": "Billboard"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
