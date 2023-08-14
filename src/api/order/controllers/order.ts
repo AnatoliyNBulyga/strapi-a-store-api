@@ -1,4 +1,4 @@
-const stripe = require('stripe')(process.env.STRIPE_SECRETE_KEY);
+const stripe = require('stripe')('sk_test_51Ndq0NGjEeCNrSDcVxZVweJHjdaAjnnidXxXNHXPxPAKMHqTDQxHN8TuXstcRP2DqwvtHEe6NK8UA9z4dBgF4hE700ve4jPsyz');
 
 /**
  * order controller
@@ -21,7 +21,6 @@ export default factories.createCoreController('api::order.order', ({ strapi }) =
             currency: "usd",
             product_data: {
               name: item.name,
-              price: item.price * 100
             },
             unit_amount: item.price * 100,
           },
